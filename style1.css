@@ -89,3 +89,12 @@ header {
 }
 
 .content
+
+#searchbutton {
+	background-color:#AEAEAE;
+	color:#51514D;
+}
+
+#input_subheading {
+	font-size:8;
+}
