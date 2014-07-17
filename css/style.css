@@ -22,7 +22,7 @@ header {
 
 .small_font {
 	font-family:sans-serif;
-	font-size:20px;
+	font-size:12px;
 	font-weight:bold;
 	color:white;
 }
@@ -39,20 +39,18 @@ header {
 	padding-top:12px;
 }
 
-.jumbotron {
+.container .jumbotron {
 	height:475px;
-	width: 975px;
+	width: 100%;
 	background-color:#585858;
 	/* The following 3 lines are for removing rounded corners, according to what I found on web, but did not seem to work */
-	-moz-border-radius:0px;
-	-webkit-border-radius:0px;
 	border-radius:0px;
 }
 
 #bar {
 	background-color:#CC0000;
-	height:10px;
-	width:975px;
+	height:10px; 
+	width:100%; /* begin using % instead of fixed widths - responsive */
 	margin-top:5px;
 	margin-bottom:5px
 }
@@ -61,13 +59,14 @@ header {
 	height:90px;
 	width:295px;
 	background-color:#AEAEAE;
+	margin-left: 20px; 
 }
 
 #blog {
 	border: 2px;
 	border-color:gray;
 	border-style:solid none solid none;
-    font-family:sans-serif;
+	font-family:sans-serif;
 	font-size: 24px;
 	font-weight:bold;
 	height:34px;
@@ -88,13 +87,11 @@ header {
 	float:left;
 }
 
-.content
-
 #searchbutton {
 	background-color:#AEAEAE;
 	color:#51514D;
 }
 
 #input_subheading {
-	font-size:8;
+	font-size:8px;
 }
