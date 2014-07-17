@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Institute for Diversity in the Arts</title>
   <!-- Bootstrap -->
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link href="style1.css" rel="stylesheet" type="text/css"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -19,22 +19,37 @@
   <div class="container fluid">
     <div id="bigbox">
       <div class="row">
-        <div class="col-md-8"><header><p class="large_font">IDA</p><p class="small_font">STANFORD UNIVERSITY</p></header></div>
-        <div class="col-md-4"><nav id="menutop"> ABOUT | STUDENTS | ARTISTS | EVENTS | BLOG </nav></div>
+        <div class="col-md-8">
+          <header>
+            <p class="large_font">IDA</p>
+            <p class="small_font">STANFORD UNIVERSITY</p>
+          </header>
+        </div>
+        <div class="col-md-4">
+          <nav id="menutop">
+            <ul>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#">STUDENTS</a></li>
+              <li><a href="#">ARTISTS</a></li>
+              <li><a href="#">EVENTS</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div class="jumbotron"></div>
       <div id="bar"></div>
       <div class="row">
-        <div class="col-md-4 row_1of3">.col-md-4</div>
-        <div class="col-md-4 row_1of3">.col-md-4</div>
-        <div class="col-md-4 row_1of3">.col-md-4</div>
+        <div class="col-md-4 row_1of3 highlight">Box 1</div>
+        <div class="col-md-4 row_1of3 highlight">Box 2</div>
+        <div class="col-md-4 row_1of3 highlight">Box 3</div>
       </div>
       <div id="blog">BLOG
         <span>
-          <img class="blogimg" src="twitter_logo.png"/>
-          <img class="blogimg" src="facebook_logo_red.png"/>
-          <img class="blogimg" src="vimeo_logo.png"/>
-          <img class="blogimg" src="blog_logo.png"/>
+          <img class="blogimg" src="img/twitter_logo.png" width="30" height="32" alt="twitter" />
+          <img class="blogimg" src="img/facebook_logo_red.png"/>
+          <img class="blogimg" src="img/vimeo_logo.png"/>
+          <img class="blogimg" src="img/blog_logo.png"/>
         </span>
       </div>
       <div class="row">
@@ -52,11 +67,11 @@
           </div>
           <div class="col-md-4">
             <form class="form-signin" role="form" _lpchecked="1">
-              <input>
+              <input type="text" length="" placeholder="" id="">
               <button type="button" id="searchbutton">Search</button> <!--Why doesn't the styling change on this based on my CSS commands?-->
-              <h6 class="form-signin-heading"><b>Subscribe to our newsletter</b></h6>
-              <input placeholder="Name">
-              <input placeholder="Email">
+              <h6 class="form-signin-heading">Subscribe to our newsletter</h6>
+              <input placeholder="Name" type="text" length="" placeholder="" id="">
+              <input placeholder="Email" type="text" length="" placeholder="" id="">
               <p id="input_subheading">An email will be sent for opt-in verification.</p>
               <button type="submit">Subscribe</button>
               <button type="submit">Like</button>
